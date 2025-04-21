@@ -41,7 +41,7 @@ pip install pyautogui pygetwindow keyboard
 python pdf_compare_assistant.py
 ```
 
-3. Click "Yes" on the confirmation dialog to start the comparison
+3. Click "はい（Yes）" on the confirmation dialog to start the comparison
 4. Press and hold the Esc key to stop the process at any time
 
 ## Notes
