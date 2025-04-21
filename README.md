@@ -1,6 +1,7 @@
 # pdf-compare-assistant-patapata
 A verification tool that automatically "flips" (Patapata) between PDF tabs for efficient comparison./PDFを「パタパタ」と自動でめくりながら比較する検版支援ツール。
-
+ [日本語](#japanese) | [English](#english) 
+<a id="english"></a>
 # PDF Compare Assistant "Patapata"
 
 A tool to automate PDF comparison verification process by automatically switching between multiple PDF tabs opened in Adobe Acrobat.
@@ -71,7 +72,75 @@ I am not a professional developer or software engineer, just a middle-aged woman
 This tool was created as a personal project with significant help from Claude's Sonnet 3.5 and 3.7.
 If you provide feedback, bug reports, or suggestions, I will sincerely work on improvements with the help of Sonnet and knowledgeable community members.
 I would appreciate your cooperation in my learning and growth.
+---
+
+
+ [日本語](#japanese) | [English](#english) 
+<a id="japanese"></a>
+
+# PDF比較アシスタント「パタパタ」(PDF Compare Assistant "Patapata")
+
+PDFの比較確認（あおり検版）を自動化するためのツールです。Adobe Acrobatで開いた複数のPDFタブを自動的に切り替えながら比較確認作業を効率化します。
+
+「パタパタ」(Patapata)という名前は、日本の出版・印刷業界で使われる「あおり検版」の通称です。複数のPDFページをパタパタと素早く切り替えて比較することから、このような愛称で呼ばれています。このツールはそのパタパタという作業を自動化します。
+
+## 機能
+
+- Adobe Acrobatで開いた複数のPDFタブを自動的に切り替え
+- 左右のPDFを交互に表示
+- 一定時間後に自動でページ送り
+- Escキーの長押し（約5秒間）で操作を中止可能
+
+## 必要条件
+
+- Python 3.6以上
+- 以下のPythonパッケージ:
+  - pyautogui
+  - pygetwindow
+  - keyboard
+
+## インストール方法
+
+```bash
+# 必要なパッケージのインストール
+pip install pyautogui pygetwindow keyboard
+```
+
+## 使用方法
+
+1. Adobe Acrobatで比較したい2つのPDFファイルを別々のタブで開きます
+2. このスクリプトを実行します:
+
+```bash
+python pdf_compare_assistant.py
+```
+
+3. 確認ダイアログが表示されたら「はい」をクリックして比較を開始します
+4. 途中で中止したい場合はEscキーを約5秒間長押しします。ただし、停止信号が検知されてから実際に動作が停止するまでに数秒かかり、その間にさらに数ページが処理される場合があります
+
+## 注意事項
+
+- このツールはAdobe Acrobatでタブ表示されているPDFファイルでの使用を想定しています
+- 他のPDFビューアでも動作する可能性がありますが、テストはされていません
+- スクリプト内のコメントアウトされた部分を編集することで、他のPDFビューア（例：PDF-XChange Viewer）にも対応可能です
+
+## カスタマイズ
+
+スクリプト内の以下の部分を編集することで、動作をカスタマイズできます:
+
+- `time.sleep(0.5)` の値を変更すると、タブ切り替えの間隔を調整できます
+- アクティブにするウィンドウのタイトルを変更することで、他のPDFビューアにも対応できます
+
+## ライセンス
+
+[MITライセンス](LICENSE)
+
+## 作者
+
+[あなたの名前や組織名]
 
 ---
+
+*このツールは検版作業の効率化のために作成されました。実際の検版作業の品質保証を保証するものではありません。*
 
 *This tool was created to improve the efficiency of document comparison. It does not guarantee the quality of the verification process itself.*
