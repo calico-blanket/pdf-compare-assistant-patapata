@@ -73,6 +73,7 @@ This tool was created as a personal project with significant help from Claude's 
 If you provide feedback, bug reports, or suggestions, I will sincerely work on improvements with the help of Sonnet and knowledgeable community members.
 I would appreciate your cooperation in my learning and growth.
 ---
+*This tool was created to improve the efficiency of document comparison. It does not guarantee the quality of the verification process itself.*
 
 
  [日本語](#japanese) | [English](#english) 
@@ -135,12 +136,27 @@ python pdf_compare_assistant.py
 
 [MITライセンス](LICENSE)
 
-## 作者
+### 貢献
 
-[あなたの名前や組織名]
+貢献は歓迎します！Issue報告や改善のためのプルリクエストをお待ちしています。
+
+## Author / 作者
+
+calico_blanket (猫柄毛布）
+
+## Note from the Author / 作者からのお知らせ
+
+私はプロのデベロッパーやソフトエンジニアではなく、単なる、おばちゃんのIT愛好家にすぎません。
+このツールは個人的なプロジェクトとして、ClaudeのSonnet3.7の助けを大きく借りて作成しました。
+フィードバック、バグ報告、および提案などをいただきましたら、Sonnetと有識者の皆様のお知恵をお借りして、真摯に改善に取り組みたいと思います。
+私の学びと成長ににご協力いただけると幸いです。
+
+I am not a professional developer or software engineer, just a middle-aged woman who is an IT enthusiast.
+This tool was created as a personal project with significant help from Claude's Sonnet 3.5 and 3.7.
+If you provide feedback, bug reports, or suggestions, I will sincerely work on improvements with the help of Sonnet and knowledgeable community members.
+I would appreciate your cooperation in my learning and growth.
 
 ---
 
 *このツールは検版作業の効率化のために作成されました。実際の検版作業の品質保証を保証するものではありません。*
 
-*This tool was created to improve the efficiency of document comparison. It does not guarantee the quality of the verification process itself.*
