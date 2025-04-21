@@ -12,10 +12,10 @@ A tool to automate PDF comparison verification process by automatically switchin
 
 ## Features
 
-- Automatically switches between multiple PDF tabs open in Adobe Acrobat
-- Alternately displays left and right PDFs for comparison
-- Automatically flips pages after a set interval
-- Operation can be stopped at any time with the Esc key
+- Automatically switches between multiple PDF tabs open in Adobe Acrobat.
+- Alternately displays left and right PDFs for comparison.
+- Automatically flips pages after a set interval.
+- Operation can be stopped at any time with the Esc key.
 
 ## Requirements
 
@@ -34,28 +34,28 @@ pip install pyautogui pygetwindow keyboard
 
 ## How to Use
 
-1. Open the two PDF files you want to compare in separate tabs in Adobe Acrobat
+1. Open the two PDF files you want to compare in separate tabs in Adobe Acrobat.
 2. Run this script:
 
 ```bash
 python pdf_compare_assistant.py
 ```
 
-3. Click "はい（Yes）" on the confirmation dialog to start the comparison
-4. Press and hold the Esc key to stop the process at any time
+3. Click "はい（Yes）" on the confirmation dialog to start the comparison.
+4. Press and hold the Esc key for about 2 seconds to stop the process at any time.
 
 ## Notes
 
-- This tool is designed for use with PDF files opened in tabs in Adobe Acrobat
-- It may work with other PDF viewers, but this has not been tested
-- By editing the commented-out sections in the script, you can adapt it for other PDF viewers (e.g., PDF-XChange Viewer)
+- This tool is designed for use with PDF files opened in tabs in Adobe Acrobat.
+- It may work with other PDF viewers, but this has not been tested.
+- By editing the commented-out sections in the script, you can adapt it for other PDF viewers (e.g., PDF-XChange Viewer).
 
 ## Customization
 
 You can customize the behavior by editing the following parts of the script:
 
-- Change the value of `time.sleep(0.5)` to adjust the interval between tab switches
-- Change the window title to be activated to adapt to other PDF viewers
+- Change the value of `time.sleep(0.5)` to adjust the interval between tab switches.
+- Change the window title to be activated to adapt to other PDF viewers.
 
 ## License
 
@@ -109,28 +109,28 @@ pip install pyautogui pygetwindow keyboard
 
 ## 使用方法
 
-1. Adobe Acrobatで比較したい2つのPDFファイルを別々のタブで開きます
+1. Adobe Acrobatで比較したい2つのPDFファイルを別々のタブで開きます。
 2. このスクリプトを実行します:
 
 ```bash
 python pdf_compare_assistant.py
 ```
 
-3. 確認ダイアログが表示されたら「はい」をクリックして比較を開始します
-4. 途中で中止したい場合はEscキーを約5秒間長押しします。ただし、停止信号が検知されてから実際に動作が停止するまでに数秒かかり、その間にさらに数ページが処理される場合があります
+3. 確認ダイアログが表示されたら「はい」をクリックして比較を開始します。
+4. 途中で中止したい場合はEscキーを約2秒間長押しします。ただし、停止信号が検知されてから実際に動作が停止するまでに数秒かかり、その間にさらに数ページが処理される場合があります。
 
 ## 注意事項
 
-- このツールはAdobe Acrobatでタブ表示されているPDFファイルでの使用を想定しています
-- 他のPDFビューアでも動作する可能性がありますが、テストはされていません
-- スクリプト内のコメントアウトされた部分を編集することで、他のPDFビューア（例：PDF-XChange Viewer）にも対応可能です
+- このツールはAdobe Acrobatでタブ表示されているPDFファイルでの使用を想定しています。
+- 他のPDFビューアでも動作する可能性がありますが、テストは行っておりません。
+- スクリプト内のコメントアウトされた部分を編集することで、他のPDFビューア（例：PDF-XChange Viewer）にも対応可能です。
 
 ## カスタマイズ
 
 スクリプト内の以下の部分を編集することで、動作をカスタマイズできます:
 
-- `time.sleep(0.5)` の値を変更すると、タブ切り替えの間隔を調整できます
-- アクティブにするウィンドウのタイトルを変更することで、他のPDFビューアにも対応できます
+- `time.sleep(0.5)` の値を変更すると、タブ切り替えの間隔を調整できます。
+- アクティブにするウィンドウのタイトルを変更することで、他のPDFビューアにも対応できます。
 
 ## ライセンス
 
@@ -138,7 +138,7 @@ python pdf_compare_assistant.py
 
 ### 貢献
 
-貢献は歓迎します！Issue報告や改善のためのプルリクエストをお待ちしています。
+貢献は歓迎します！。Issue報告や改善のためのプルリクエストをお待ちしています。
 
 ## Author / 作者
 
