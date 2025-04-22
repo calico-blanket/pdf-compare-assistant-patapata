@@ -41,7 +41,21 @@ python pdf_compare_assistant.py
 ```
 
 3. Click "はい（Yes）" on the confirmation dialog to start the comparison.
-4. Press and hold the Esc key for about 2 seconds to stop the process at any time.
+4. To stop the process in the middle, press and hold the Esc key for about 2 seconds.
+   **Note:** There will be a delay of several seconds between when you hold down the key and when the operation actually stops, during which several more pages may be processed.
+
+## Compatible PDF Viewers
+- This tool is designed for use with PDF files opened in tabs in Adobe Acrobat.
+- It may work with other PDF viewers, but this has not been tested.
+- If you want to try it with other PDF viewers (e.g., PDF-XChange Viewer), edit the commented-out section in the script as shown below:
+
+```
+try:
+        # Adobe Acrobatのウィンドウを取得
+        acrobat_windows = gw.getWindowsWithTitle('Adobe Acrobat')
+        # 別のPDFビューアを使用する場合は以下の行のコメントを外して編集してください。
+        # acrobat_windows = gw.getWindowsWithTitle('PDF-XChange Viewer')
+ ```       
 
 ## Notes
 
@@ -50,9 +64,7 @@ python pdf_compare_assistant.py
 - By editing the commented-out sections in the script, you can adapt it for other PDF viewers (e.g., PDF-XChange Viewer).
 
 ## Customization
-
 You can customize the behavior by editing the following parts of the script:
-
 - Change the value of `time.sleep(0.5)` to adjust the interval between tab switches.
 - Change the window title to be activated to adapt to other PDF viewers.
 
