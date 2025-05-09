@@ -1,7 +1,12 @@
+
 # PDF Compare Assistant "Patapata"
+
 A verification tool that automatically "flips" (Patapata) between PDF tabs for efficient comparison./PDFを「パタパタ」と自動でめくりながら比較する検版支援ツール。
- [日本語](#japanese) | [English](#english) 
-<a id="english"></a>
+
+ [日本語](#japanese) | [English](#english)
+  
+## English {#english}
+
 
 A tool to automate PDF comparison verification process by automatically switching between multiple PDF tabs opened in Adobe Acrobat.
 
@@ -86,7 +91,7 @@ I would appreciate your cooperation in my learning and growth.
 ---
 *This tool was created to improve the efficiency of document comparison. It does not guarantee the quality of the verification process itself.*
 
-<a id="japanese"></a>
+## 日本語 {#japanese}
 
 # PDF比較アシスタント「パタパタ」(PDF Compare Assistant "Patapata")
 
@@ -160,6 +165,7 @@ try:
 ## 作者
 
 calico_blanket (猫柄毛布）
+<https://x.com/calico_blanket>
 
 ## 作者から
 
