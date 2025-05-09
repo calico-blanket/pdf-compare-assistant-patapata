@@ -3,10 +3,9 @@
 
 A verification tool that automatically "flips" (Patapata) between PDF tabs for efficient comparison./PDFを「パタパタ」と自動でめくりながら比較する検版支援ツール。
 
- [日本語](#japanese) | [English](#english)
+ [日本語](#japanese) |English
   
-## English {#english}
-
+<a id="english"></a>
 
 A tool to automate PDF comparison verification process by automatically switching between multiple PDF tabs opened in Adobe Acrobat.
 
@@ -41,26 +40,28 @@ pip install pyautogui pygetwindow keyboard
 1. Open the two PDF files you want to compare in separate tabs in Adobe Acrobat.
 2. Run this script:
 
-```bash
-python pdf_compare_assistant.py
-```
+   ```bash
+   python pdf_compare_assistant.py
+   ```  
 
-3. Click "はい（Yes）" on the confirmation dialog to start the comparison.
+3. Click "はい（Yes）" on the confirmation dialog to start the comparison.  
 4. To stop the process in the middle, press and hold the Esc key for about 2 seconds.
    **Note:** There will be a delay of several seconds between when you hold down the key and when the operation actually stops, during which several more pages may be processed.
 
 ## Compatible PDF Viewers
+
 - This tool is designed for use with PDF files opened in tabs in Adobe Acrobat.
 - It may work with other PDF viewers, but this has not been tested.
 - If you want to try it with other PDF viewers (e.g., PDF-XChange Viewer), edit the commented-out section in the script as shown below:
 
-```
-try:
+ try:
+
+ ```Python
         # Adobe Acrobatのウィンドウを取得
         acrobat_windows = gw.getWindowsWithTitle('Adobe Acrobat')
         # 別のPDFビューアを使用する場合は以下の行のコメントを外して編集してください。
         # acrobat_windows = gw.getWindowsWithTitle('PDF-XChange Viewer')
- ```       
+ ```
 
 ## Notes
 
@@ -69,14 +70,15 @@ try:
 - By editing the commented-out sections in the script, you can adapt it for other PDF viewers (e.g., PDF-XChange Viewer).
 
 ## Customization
+
 You can customize the behavior by editing the following parts of the script:
+
 - Change the value of `time.sleep(0.5)` to adjust the interval between tab switches.
 - Change the window title to be activated to adapt to other PDF viewers.
 
 ## License
 
 [MIT License](LICENSE)
-
 
 ## Author  
 
@@ -87,11 +89,15 @@ calico_blanket
 I am not a professional developer or software engineer, just a middle-aged woman who is an IT enthusiast.
 This tool was created as a personal project with significant help from Claude's Sonnet 3.5 and 3.7.
 If you provide feedback, bug reports, or suggestions, I will sincerely work on improvements with the help of Sonnet and knowledgeable community members.
-I would appreciate your cooperation in my learning and growth.
+I would appreciate your cooperation in my learning and growth
+
 ---
+
 *This tool was created to improve the efficiency of document comparison. It does not guarantee the quality of the verification process itself.*
 
-## 日本語 {#japanese}
+ 日本語| [English](#english)  
+
+<a id="japanese"></a>
 
 # PDF比較アシスタント「パタパタ」(PDF Compare Assistant "Patapata")
 
@@ -126,9 +132,9 @@ pip install pyautogui pygetwindow keyboard
 1. Adobe Acrobatで比較したい2つのPDFファイルを別々のタブで開きます。
 2. このスクリプトを実行します。:
 
-```bash
-python pdf_compare_assistant.py
-```
+   ```bash
+   python pdf_compare_assistant.py
+   ```
 
 3. 確認ダイアログが表示されたら「はい」をクリックして比較を開始します。
 4. 途中で中止したい場合はEscキーを2秒間程度長押しします。ただし、長押ししてから実際に動作が停止するまでに数秒かかり、その間にさらに数ページが処理される場合があります。
@@ -139,13 +145,13 @@ python pdf_compare_assistant.py
 - 他のPDFビューワーでも動作する可能性がありますが、テストは行っていません。
 - 他のPDFビューワー（例：PDF-XChange Viewer）で試してみる場合は、スクリプト内のコメントアウトされた部分（下記）を編集してください。
 
-```
+```Python
 try:
         # Adobe Acrobatのウィンドウを取得
         acrobat_windows = gw.getWindowsWithTitle('Adobe Acrobat')
         # 別のPDFビューアを使用する場合は以下の行のコメントを外して編集してください。
         # acrobat_windows = gw.getWindowsWithTitle('PDF-XChange Viewer')
- ```       
+ ```
 
 ## カスタマイズ
 
